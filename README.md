@@ -61,12 +61,16 @@ git clone https://github.com/RajCoder-15/CollabDOCS.git
 ## 📂 Project Structure
 
 ```
+## 📂 Project Structure
+
 CollabDOCS/
+│── Screenshots/
+│   └── editor.png
+│
 │── index.html
 │── style.css
 │── script.js
-```
-
+│── README.md
 ---
 
 ## 💡 Key Concepts Used
