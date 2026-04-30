@@ -1,58 +1,65 @@
-# CollabDOCS
-
 # 📄 CollabDocs - Rich Text Editor
 
 ## 🚀 About the Project
 
-CollabDocs is a modern **rich text editor web application** that allows users to create, edit, and format documents in real time. It provides a clean and interactive interface similar to basic document editing tools like Google Docs.
+CollabDocs is a modern **rich text editor web application** built using HTML, CSS, and JavaScript. It allows users to create, edit, and format documents in real time with an intuitive and user-friendly interface.
 
-This project focuses on **frontend development**, DOM manipulation, and user experience.
+The project focuses on **frontend development**, DOM manipulation, and building interactive web applications.
+
+---
+
+## 🌐 Live Demo
+
+👉 https://collabdocs-bice.vercel.app
 
 ---
 
 ## 🛠️ Tech Stack
 
-* 🌐 HTML5
-* 🎨 CSS3
-* ⚡ JavaScript (Vanilla JS)
-* 🧠 DOM Manipulation
-* 💾 Local Storage
+* HTML5
+* CSS3
+* JavaScript (Vanilla JS)
+* DOM Manipulation
+* Local Storage
 
 ---
 
 ## ✨ Features
 
-* 📝 Rich text editing (Bold, Italic, Underline, Strike)
-* 🎨 Text color & highlight support
-* 🔤 Font size and font family selection
-* 📐 Text alignment (Left, Center, Right)
-* 🧹 Clear formatting option
-* 💾 Auto-save using Local Storage
-* 📊 Live word & character count
-* 📁 Export document as `.txt` file
-* 🧾 Editable document title
-* 🟢 Save status indicator
+* Rich text editing (Bold, Italic, Underline, Strike-through)
+* Text color and highlight support
+* Font size and font family selection
+* Text alignment (Left, Center, Right)
+* Clear formatting option
+* Auto-save using Local Storage
+* Live word and character count
+* Export document as `.txt` file
+* Editable document title
+* Save status indicator
 
 ---
 
 ## 📸 Screenshots
 
-### 🖥️ Editor Interface
 ![Editor](Screenshots/editor.png)
 
 ---
 
 ## ⚡ How to Run Locally
 
-1. Clone the repository
+1. Clone the repository:
 
 ```bash
 git clone https://github.com/RajCoder-15/CollabDOCS.git
 ```
 
-2. Open the project folder
+2. Navigate to the project folder:
 
-3. Run the project
+```bash
+cd CollabDOCS
+```
+
+3. Open the project:
 
 * Open `index.html` in your browser
 
@@ -61,8 +68,6 @@ git clone https://github.com/RajCoder-15/CollabDOCS.git
 ## 📂 Project Structure
 
 ```
-## 📂 Project Structure
-
 CollabDOCS/
 │── Screenshots/
 │   └── editor.png
@@ -71,24 +76,26 @@ CollabDOCS/
 │── style.css
 │── script.js
 │── README.md
+```
+
 ---
 
 ## 💡 Key Concepts Used
 
 * document.execCommand() for text formatting
 * Event handling in JavaScript
-* Local Storage for saving data
-* Dynamic DOM updates
+* Local Storage for data persistence
+* Dynamic DOM manipulation
 
 ---
 
 ## 🚧 Future Improvements
 
-* 🔥 Real-time collaboration (WebSockets / Firebase)
-* 🔐 User authentication
-* ☁️ Cloud document storage
-* 📄 Export as PDF / DOCX
-* 👥 Multi-user editing
+* Real-time collaboration (WebSockets / Firebase)
+* User authentication
+* Cloud document storage
+* Export as PDF / DOCX
+* Multi-user editing
 
 ---
 
@@ -101,4 +108,4 @@ GitHub: https://github.com/RajCoder-15
 
 ## ⭐ Support
 
-If you like this project, consider giving it a ⭐ on GitHub!
+If you like this project, give it a ⭐ on GitHub!
