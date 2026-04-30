@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CollabDocs - Rich Text Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <header class="header">
+        <div class="logo">
+            <div class="logo-icon">CD</div>
+            <h1>CollabDocs</h1>
+        </div>
+        <div class="header-actions">
+            <div class="sync-status">
+                <span class="sync-dot"></span>
+                <span>Saved</span>
+            </div>
+            <button class="btn btn-primary" onclick="exportDoc()">Export</button>
+        </div>
+    </header>
+
+    <div class="toolbar">
+        <div class="toolbar-group">
+            <button class="toolbar-btn" onclick="format('bold')" title="Bold"><b>B</b></button>
+            <button class="toolbar-btn" onclick="format('italic')" title="Italic"><i>I</i></button>
+            <button class="toolbar-btn" onclick="format('underline')" title="Underline"><u>U</u></button>
+            <button class="toolbar-btn" onclick="format('strikeThrough')" title="Strike"><s>S</s></button>
+        </div>
+        
+        <div class="toolbar-group">
+            <select class="toolbar-select" onchange="format('fontSize', this.value)">
+                <option value="1">Small</option>
+                <option value="3" selected>Normal</option>
+                <option value="5">Large</option>
+                <option value="7">Huge</option>
+            </select>
+            
+            <select class="toolbar-select" onchange="format('fontName', this.value)">
+                <option value="Arial">Arial</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Courier New">Courier New</option>
+                <option value="Verdana">Verdana</option>
+            </select>
+        </div>
+        
+        <div class="toolbar-group">
+            <input type="color" id="textColor" onchange="format('foreColor', this.value)" title="Text Color">
+            <input type="color" id="bgColor" value="#ffff00" onchange="format('backColor', this.value)" title="Highlight">
+        </div>
+        
+        <div class="toolbar-group">
+            <button class="toolbar-btn" onclick="format('justifyLeft')" title="Left">◧</button>
+            <button class="toolbar-btn" onclick="format('justifyCenter')" title="Center">■</button>
+            <button class="toolbar-btn" onclick="format('justifyRight')" title="Right">◨</button>
+        </div>
+        
+        <div class="toolbar-group">
+            <button class="toolbar-btn" onclick="format('removeFormat')" title="Clear">Clear</button>
+        </div>
+    </div>
+
+    <div class="editor-wrapper">
+        <div class="document-title">
+            <input type="text" id="docTitle" placeholder="Untitled Document" />
+        </div>
+        <div class="editor-container">
+            <div id="editor" class="rich-editor" contenteditable="true" spellcheck="true">
+                Type your text here. Select any text and use the toolbar above to format it!
+            </div>
+        </div>
+    </div>
+
+    <div class="stats-bar">
+        <div class="stats-left">
+            <div>Words: <strong id="wordCount">0</strong></div>
+            <div>Characters: <strong id="charCount">0</strong></div>
+            <div>Last edited: <strong>Just now</strong></div>
+        </div>
+        <div>1 active user</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
